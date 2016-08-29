@@ -43,12 +43,6 @@ This script will ask the name of this new project, you type there and it renames
     Changing every entry of simple_django inside the project
 
 You can run this command to change the project name whenever you want.
-After this, all your files will be renamed to your new project name, so you must commit the changes to git.
-::
-
-    $git add .
-    $git commit -m "initial commit and renaming"
-    $git push
 
 After that, just run **python manage.py runserver** and test if it's working, don't forget to change the database setting.
 
@@ -65,3 +59,13 @@ Open a python terminal and type this to generate a good secret key:
     '7%ia!et@s@dd3vb!fmq2rq079e+98&o#d+rvvto542wgm+sjc&'
 
 In my case it returned this secret key, just copy and paste in your settings file.
+
+After this, all your files will be renamed to your new project name, and your SECRET_KEY is set, now you must commit the changes to git.
+::
+
+    $git add .
+    $git commit -m "initial commit and renaming"
+    $git push
+
+
+And start coding :)
