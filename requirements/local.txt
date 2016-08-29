@@ -1,0 +1,5 @@
+-r base.txt
+
+sphinx
+django-debug-toolbar
+django-extensions

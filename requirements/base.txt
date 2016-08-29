@@ -1,0 +1,21 @@
+# Versions are left out on purpose in order for you to use the latest ones.
+# After the first "pip install -r", just run "pip freeze" and add the version
+# to each package in each requirements/*.txt.
+
+#Django
+django==1.10.0
+
+#Models
+django-model-utils
+
+#Configurations
+django-environ==0.4.0
+
+#DB
+mysqlclient
+
+#Forms
+django-braces==1.9.0
+django-crispy-forms==1.6.0
+
+
