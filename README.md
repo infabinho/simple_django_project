@@ -17,7 +17,7 @@ To create a new project, just run these steps found on: https://help.github.com/
     
     $cd simple_django_project.git/
     $git push --mirror https://github.com/exampleuser/new-repository.git
-    # Mirror-push to the new repository
+    # Mirror-push to the new repository (you must have created it befeore)
     
     $cd ..
     $rm -rf old-repository.git
