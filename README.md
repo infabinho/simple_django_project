@@ -29,3 +29,33 @@ Now, you can clone your new-repository into your machine and start to work in yo
     $cd new-repository
     
 And start your working
+
+Note
+----
+ 
+When you clone this new repository and start working, you **must** run the **rename_project.sh**.
+This script will ask the name of this new project, you type there and it renames for you all the files.::
+
+    $./rename_project.sh
+    The new project's name: my_new_project
+
+    Moving the project dir simple_django to my_new_project
+    Changing every entry of simple_django inside the project
+
+You can run this command to change the project name whenever you want.
+
+After that, just run **python manage.py runserver** and test if it's working, don't forget to change the database setting.
+
+DON'T FORGET
+---------------
+
+Change the SECRET_KEY in your **simple_django/settings/base.py**.
+
+Open a python terminal and type this to generate a good secret key:
+::
+
+    >>> import random
+    >>> ''.join([random.SystemRandom().choice('abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(-_=+)') for i in range(50)])
+    '7%ia!et@s@dd3vb!fmq2rq079e+98&o#d+rvvto542wgm+sjc&'
+
+In my case it returned this secret key, just copy and paste in your settings file.
